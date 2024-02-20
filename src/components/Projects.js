@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import gmail from '../images/gmail.png.png'
 import amazon from '../images/amazon.png'
 import Url from '../images/URLshortener.png'
-import password from '../images/reset password.png'
+import hall_booking from '../images/hall_booking.png'
 import Card from 'react-bootstrap/Card';
 import Header from './Header'
 import Button from 'react-bootstrap/Button'
@@ -32,11 +32,11 @@ function Projects() {
       githuburl: 'https://github.com/vichusekar/urlshortener-frontend'
     },
     {
-      name: 'Password Reset',
-      description: 'The password reset web application use the user can reset password only become a already user',
-      img: password,
-      deployurl: 'https://capable-bienenstitch-f6d4b0.netlify.app/',
-      githuburl: 'https://github.com/vichusekar/password-reset'
+      name: 'Hall Booking',
+      description: 'The Hall Booking app is create an room as a user and the user can change and do forgot-password',
+      img: hall_booking ,
+      deployurl: 'https://incomparable-brigadeiros-321042.netlify.app/',
+      githuburl: 'https://github.com/vichusekar/hall_booking'
     }
   ])
   return <>
