@@ -3,6 +3,7 @@ import gmail from '../images/gmail.png.png'
 import amazon from '../images/amazon.png'
 import Url from '../images/URLshortener.png'
 import hall_booking from '../images/hall_booking.png'
+import Blog from '../images/blog.png'
 import Card from 'react-bootstrap/Card';
 import Header from './Header'
 import Button from 'react-bootstrap/Button'
@@ -25,11 +26,11 @@ function Projects() {
       githuburl: 'https://github.com/vichusekar/WebScraping-Ecommerce/tree/clientt'
     },
     {
-      name: 'URL Shortener',
-      description: 'The URL Shortener app will convert the long url into small url',
-      img: Url,
-      deployurl: 'https://subtle-sorbet-a3f946.netlify.app/',
-      githuburl: 'https://github.com/vichusekar/urlshortener-frontend'
+      name: 'Blog App',
+      description: 'The Blog app is create an new blog of title, images, details and we can edit and delete that blog',
+      img: Blog,
+      deployurl: 'https://glowing-daifuku-e624da.netlify.app/',
+      githuburl: 'https://github.com/vichusekar/Blog-App'
     },
     {
       name: 'Hall Booking',
