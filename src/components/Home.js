@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Header from '../components/Header';
-import Resume from '../Pdf/Vignesh's Resume.pdf'
+import Resume from '../Pdf/Vignesh R Resume.pdf'
 
 function Home() {
   return <>
