@@ -9,6 +9,7 @@ import Js from '../images/javascript.png'
 import Mongodb from '../images/mongodb.png'
 import Node from '../images/node.png'
 import react from '../images/react.png'
+import Bootstrap from '../images/download.png'
 
 function Skills() {
     let [data, setData] = useState([
@@ -21,13 +22,14 @@ function Skills() {
             img: CSS
         },
         {
+            name: 'Bootstrap',
+            img: Bootstrap
+        },
+        {
             name: 'Javascript',
             img: Js
         },
-        {
-            name: 'Git',
-            img: Git
-        },
+        
         {
             name: 'React JS',
             img: react
@@ -43,23 +45,30 @@ function Skills() {
         {
             name: 'MongoDB',
             img: Mongodb
+        },
+        {
+            name: 'Git',
+            img: Git
         }
     ])
     return <>
-        <Header />
-        <div className='card-main'>
-            <h3 style={{ paddingBottom: '20px' }}><b>SKILLS</b></h3>
-            {
-                data.map((e, i) => {
-                    return <Card style={{ width: '130px', height: '170px' }} key={i}>
-                        <Card.Img variant="top" src={e.img} />
-                        <Card.Body>
-                            <Card.Title>{e.name}</Card.Title>
-                        </Card.Body>
-                    </Card>
-                })
+        <div className='skill-body'>
+            <Header />
+            <h3 style={{ color: 'black',marginTop:'40px', marginLeft:'30px'  }}><b>SKILLS</b></h3>
+            <div className='card-main-skills'>
+                
+                {
+                    data.map((e, i) => {
+                        return <Card style={{ width: '130px', height: '170px' }} key={i}>
+                            <Card.Img variant="top" src={e.img} />
+                            <Card.Body>
+                                <Card.Title>{e.name}</Card.Title>
+                            </Card.Body>
+                        </Card>
+                    })
 
-            }
+                }
+            </div>
         </div>
     </>
 }
