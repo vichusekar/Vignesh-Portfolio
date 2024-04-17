@@ -25,7 +25,6 @@ function Home() {
           />
           <a
             href={Resume}
-            // download="Vignesh Resume"
             target="_blank"
             rel="noreferrer"
           >
