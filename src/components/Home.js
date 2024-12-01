@@ -3,7 +3,8 @@ import Typewriter from "typewriter-effect";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Header from '../components/Header'
-import Resume from '../Pdf/Vignesh R Resume.pdf';
+import Resume from '../Pdf/Vignesh Resume.pdf';
+import { Footer } from './Footer';
 
 function Home() {
   return <>
@@ -24,6 +25,7 @@ function Home() {
             }}
           />
           <a
+            className='resume-link'
             href={Resume}
             target="_blank"
             rel="noreferrer"
@@ -33,12 +35,13 @@ function Home() {
 
         </div>
 
-        {/* <div > */}
         <Card style={{ marginRight: '60px' }}>
           <Card.Img variant="top" src="https://i.pinimg.com/236x/1d/6b/c0/1d6bc03c3dd55bc1c59cec84edb81a46.jpg" />
         </Card>
-        {/* </div> */}
       </div>
+    </div>
+    <div className='footer'>
+      <Footer />
     </div>
   </>
 }

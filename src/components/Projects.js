@@ -40,43 +40,43 @@ function Projects() {
     }
   ])
   return <>
-    
+
     <div className='projects-body'>
-    <Header />
-    <h3 style={{ color: 'black',marginTop:'40px', marginLeft:'30px' }}><b>PROJECTS</b></h3>
-    <div className='card-main-projects'>
-      {
-        data.map((e, i) => {
-          return <Card className='project-card' style={{ width: '18rem' }} key={i}>
-            <Card.Img variant="top" src={e.img} />
-            <Card.Body>
-              <Card.Title>{e.name}</Card.Title>
-              <Card.Text>
-                {e.description}
-              </Card.Text>
-            </Card.Body>
-            <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around'}}>
-            <a
-              href={e.githuburl}
-              target='_blank'
-              rel='noreferrer'
-            >
-              <Button variant='secondary'><i className="fa-brands fa-1x fa-github"></i>source</Button>
-            </a>
-            <a
-              href={e.deployurl}
-              target='_blank'
-              rel='noreferrer'
-            >
-              <Button style={{ marginLeft: '0px' }}><i class="fa-solid fa-arrow-up-right-from-square"></i>site</Button>
-            </a>
-            </div>
-          </Card>
+      <Header />
+      <h3 style={{ color: 'black', marginTop: '40px', marginLeft: '30px' }}><b>PROJECTS</b></h3>
+      <div className='card-main-projects'>
+        {
+          data.map((e, i) => {
+            return <Card className='project-card' style={{ width: '18rem' }} key={i}>
+              <Card.Img variant="top" src={e.img} />
+              <Card.Body>
+                <Card.Title>{e.name}</Card.Title>
+                <Card.Text>
+                  {e.description}
+                </Card.Text>
+              </Card.Body>
+              <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
+                <a
+                  href={e.githuburl}
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <Button variant='secondary'><i className="fa-brands fa-1x fa-github"></i>source</Button>
+                </a>
+                <a
+                  href={e.deployurl}
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <Button style={{ marginLeft: '0px' }}><i class="fa-solid fa-arrow-up-right-from-square"></i>site</Button>
+                </a>
+              </div>
+            </Card>
 
-        })
+          })
 
-      }
-    </div>
+        }
+      </div>
 
     </div>
   </>

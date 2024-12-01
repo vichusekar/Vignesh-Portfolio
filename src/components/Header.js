@@ -13,14 +13,15 @@ function Header() {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
-            <Navbar.Brand onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>Home</Navbar.Brand>
-            <Navbar.Brand onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>About</Navbar.Brand>
-            <Navbar.Brand onClick={() => navigate('/projects')} style={{ cursor: 'pointer' }}>Projects</Navbar.Brand>
-            <Navbar.Brand onClick={() => navigate('/skills')} style={{ cursor: 'pointer' }}>Skills</Navbar.Brand>
+            <Navbar.Brand className='hover-effect' onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>Home</Navbar.Brand>
+            <Navbar.Brand className='hover-effect' onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>About</Navbar.Brand>
+            <Navbar.Brand className='hover-effect' onClick={() => navigate('/projects')} style={{ cursor: 'pointer' }}>Projects</Navbar.Brand>
+            <Navbar.Brand className='hover-effect' onClick={() => navigate('/skills')} style={{ cursor: 'pointer' }}>Skills</Navbar.Brand>
           </Navbar.Text>
         </Navbar.Collapse>
-        <a href='https://github.com/vichusekar' target='_blank' rel='noreferrer' style={{ marginLeft: '30px' }}><i className="fa-brands fa-2x fa-github"></i></a>
-        <a href='https://www.linkedin.com/in/vignesh-rajasekar-a9943526a/' target='_blank' rel='noreferrer' style={{ marginLeft: '30px' }}><i style={{ color: 'blue' }} className="fa-brands fa-2x fa-linkedin"></i></a>
+        <a href='https://github.com/vichusekar' target='_blank' rel='noreferrer' style={{ marginLeft: '30px' }} ><i className="fa-brands fa-2x fa-github"></i></a>
+        <a href='https://www.linkedin.com/in/vignesh-rajasekar-a9943526a/' target='_blank' rel='noreferrer' style={{ marginLeft: '30px' }}  ><i style={{ color: 'blue' }} className="fa-brands fa-2x fa-linkedin"></i></a>
+
       </Container>
 
     </Navbar>

@@ -29,7 +29,7 @@ function Skills() {
             name: 'Javascript',
             img: Js
         },
-        
+
         {
             name: 'React JS',
             img: react
@@ -54,9 +54,9 @@ function Skills() {
     return <>
         <div className='skill-body'>
             <Header />
-            <h3 style={{ color: 'black',marginTop:'40px', marginLeft:'30px'  }}><b>SKILLS</b></h3>
+            <h3 style={{ color: 'black', marginTop: '40px', marginLeft: '30px' }}><b>SKILLS</b></h3>
             <div className='card-main-skills'>
-                
+
                 {
                     data.map((e, i) => {
                         return <Card style={{ width: '130px', height: '170px' }} key={i}>
